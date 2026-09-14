@@ -1,5 +1,5 @@
-| Technology | Scalability | Setup Complexity | Cost Model |
-| :--- | :--- | :--- | :--- |
-| **Kubernetes** | High / Cluster-level | Very High | Control plane overhead + node compute |
-| **Docker Swarm** | Medium | Low | Uses existing underlying infrastructure |
-| **AWS Fargate** | High / Serverless | Low | Pay-per-task compute resources used |
+﻿| Technology | Scalability | Setup Complexity | Cost Model | Operational Overhead |
+| :--- | :--- | :--- | :--- | :--- |
+| **Kubernetes** | High / Cluster-level (Up to 5,000 nodes & 150,000 pods per cluster) | Very High (Requires CNI networking, CSI storage, etcd, ingress, and PKI bootstrapping) | Control plane fee ($0.10/hr on EKS/GKE; free on AKS) + worker node compute/storage | Very High (Continuous node OS patching, upgrade cycles, manual capacity planning) |
+| **Docker Swarm** | Medium (Efficient up to hundreds of nodes; bottlenecked at hyperscale) | Low (Native Docker Engine CLI; single `docker swarm init` bootstrap) | Uses existing underlying infrastructure; zero master control plane license fees | Moderate (Simpler management, but host OS maintenance and daemon patching required) |
+| **AWS Fargate** | High / Serverless (Instant horizontal autoscaling managed dynamically by AWS) | Low (Serverless task definition; no node provisioning or agent setup) | Pay-per-task compute resources used (Per-second vCPU/RAM billing; 1-min minimum) | Minimal (Fully managed by AWS; zero OS patching, AMI updates, or hypervisor overhead) |
