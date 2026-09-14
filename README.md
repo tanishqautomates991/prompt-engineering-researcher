@@ -1,6 +1,6 @@
 ﻿# Prompt Engineering Researcher
 **Author:** Tanishq Soni
-**Loom Video URL:** [https://www.loom.com/share/prompt-engineering-researcher-walkthrough](https://www.loom.com/share/prompt-engineering-researcher-walkthrough)
+
 **Knowledge & Data Currency Boundary:** September 2026
 
 This repository contains an AI-assisted research workflow applying Generated Knowledge Prompting, CoVe (Chain of Verification), and the ERA framework to compare Kubernetes, Docker Swarm, and AWS Fargate under an explicit September 2026 knowledge and data currency boundary.
