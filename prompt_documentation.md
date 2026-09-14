@@ -10,8 +10,11 @@
 **Constraint:** Format the draft using exactly these H2 headers: ## Introduction, ## Tech Overviews, ## Detailed Comparison, ## Final Verdict.
 
 ## 3. CoVe (Chain of Verification) Prompt
+
 **Step 1:** Formulate exactly {{QUESTION_COUNT}} specific verification questions to fact-check the technical claims made in the draft.
+
 **Step 2:** Answer those {{QUESTION_COUNT}} questions independently.
+
 **Step 3:** Generate a Final Edit of the report (using the exact same H2 headers) correcting any inaccuracies identified.
 
 ## 4. Assumption Audit Prompt
